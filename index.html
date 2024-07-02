@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Excercise</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/" id="form">
+        <h1>Registration</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="email">email</label>
+          <input type="text" id="email" name="email" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="password2">Re-type Password</label>
+          <input type="password" id="password2" name="password2" />
+          <div class="error"></div>
+        </div>
+        <!-- test -->
+        <!-- radio section -->
+        <div class="radio-section">
+          <label class="radio-section-label">Query Type</label>
+          <div class="radio-control">
+            <label class="radio">
+              <input type="radio" name="radio" />
+              General Enquiry
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="radio" />
+              Support Request
+            </label>
+          </div>
+        </div>
+
+        <!-- checkbox -->
+
+        <div class="checkbox-control">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >I consent to being contacted by the team</label
+            >
+          </div>
+          <div class="error" id="checkbox-error"></div>
+        </div>
+
+        <!-- end test -->
+        <button type="submit">Sign-up</button>
+
+        <div id="success-popup" class="popup">
+          <div class="popup-content">
+            <h1>Message Sent!</h1>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+            <button id="close-popup">Close</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
